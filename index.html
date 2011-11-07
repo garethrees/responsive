@@ -68,12 +68,14 @@
 
 		<p>At 16px – which is about default for web browsers – that&rsquo;s about 40em</p>
 
-		<p>If we define the <code>max-width</code> as <code>40em</code> and the <code>min-width</code> as say 15em, or line lengths are 15 and 8 words respecitvely.</p>
+		<p>If we define the <code>max-width</code> as <code>40em</code> and the <code>min-width</code> as say 15em, the line lengths are 15 and 8 words respecitvely.</p>
 
 <pre>
-font-size:100%;
-min-width:15em;
-max-width:40em;
+body {
+	font-size:100%;
+	min-width:15em;
+	max-width:40em;
+}
 </pre>
 
 		<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est at mauris interdum pulvinar.</p>
@@ -114,6 +116,8 @@ max-width:40em;
 		<img src="http://placehold.it/600x300" />
 
 	</div>
+
+	<hr />
 
 	<footer role="contentinfo">
 		<p>By <a href="http://twitter.com/_gareth" title="By @_gareth">@_gareth</a> – probably not the first to think of this.</p>
