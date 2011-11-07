@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>15 Words of Lorem</title>
+
+	<style>
+		body {
+			font-family:georgia;
+			line-height:1.6;
+			margin:1em auto;
+			padding:0 1em;
+			
+			font-size:100%;
+			min-width:15em;
+			max-width:40em;
+		}
+		
+		pre {
+			background:#eee;
+			padding:0.25em;
+		}
+		
+		.lorem {
+			background:#ffc;
+		}
+		
+		.filler {
+			color:#999;
+		}
+		
+		img {
+			max-width:100%;
+		}
+		
+		@media (max-width: 25em) {
+			body {
+				font-size:125%;
+			}
+		}
+
+		@media (min-width: 60em) {
+			body {
+				font-size:125%;
+				min-width:15em;
+				max-width:45em;
+			}
+		}
+		
+	</style>
+
+</head>
+
+<body>
+
+  <header role="banner">
+		<h1>15 Words of Lorem</h1>
+	</header>
+
+	<div role="main">
+
+		<p>The ideal line length is about 15 words, apparently.</p>
+
+		<p>At 16px – which is about default for web browsers – that&rsquo;s about 40em</p>
+
+		<p>If we define the <code>max-width</code> as <code>40em</code> and the <code>min-width</code> as say 15em, or line lengths are 15 and 8 words respecitvely.</p>
+
+<pre>
+font-size:100%;
+min-width:15em;
+max-width:40em;
+</pre>
+
+		<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at est at mauris interdum pulvinar.</p>
+
+		<h2>Smaller Windows</h2>
+		
+		<p>On smaller screens, we can target a <code>max-width</code> of 40em and bump the text size up a bit. I&rsquo;m guessing that shorter line lengths are preferable when reading on a small screen.</p>
+
+<pre>
+@media (max-width: 40em) {
+	body {
+		font-size:125%;
+	}
+}
+</pre>
+
+		<h2>Bigger Windows</h2>
+		
+		<p>People with bigger screens are probably going to be sat a little further away. Lets increase the text size a bit. By doing so, we need to increase the width of the page so that the line length is around 15 words again.</p>
+
+<pre>
+@media (min-width: 60em) {
+	body {
+		font-size:125%;
+		min-width:15em;
+		max-width:45em;
+	}
+}
+</pre>
+
+		<h2>Images</h2>
+		
+		<p>Image scaling is easy: <code>max-width:100%;</code>.</p>
+		
+		<p class="filler">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p class="filler">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<img src="http://placehold.it/600x300" />
+
+	</div>
+
+	<footer role="contentinfo">
+		<p>By <a href="http://twitter.com/_gareth" title="By @_gareth">@_gareth</a> – probably not the first to think of this.</p>
+	</footer>
+
+</body>
+</html>
